@@ -1,22 +1,22 @@
 /******* Customized Bootstrap ********/
 
-$primary: #B78D65;
-$light: #F8F8F8;
-$dark: #252525;
+$primary: #ffffff; // White for highlights
+$light: #1a1a1a; // Dark gray for lighter backgrounds
+$dark: #000000; // Black for dark backgrounds
 
-$font-family-base: 'Open Sans', sans-serif;
+$font-family-base: "Open Sans", sans-serif;
 
-$headings-font-family: 'Teko', sans-serif;
+$headings-font-family: "Teko", sans-serif;
 
-$body-color: #777777;
+$body-color: #cccccc; // Light gray for text
 
-$headings-color: $dark;
+$headings-color: $primary; // White for headings
 
 $display-font-weight: 600;
 
 $enable-responsive-font-sizes: true;
 
-$border-color: $dark;
+$border-color: #333333; // Dark gray for borders
 
 $input-border-color: $border-color;
 
@@ -29,5 +29,14 @@ $border-radius-lg: $border-radius;
 $link-decoration: none;
 
 $enable-negative-margins: true;
+
+// Override bg-dark to use custom $dark color
+.bg-dark {
+  background-color: $dark !important;
+}
+
+.bg-light {
+  background-color: $light !important;
+}
 
 @import "bootstrap/scss/bootstrap";
